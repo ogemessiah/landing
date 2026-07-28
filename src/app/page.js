@@ -25,7 +25,7 @@ export default function Home() {
             <img
               src="/images/app-store-badge.svg"
               alt="Download on the App Store"
-              className="h-16 w-auto"
+              className="h-15 w-auto"
             />
           </a>
 
@@ -115,6 +115,14 @@ export default function Home() {
       {/* HOW IT WORKS */}
 
       <section className="px-6 py-24 bg-white">
+
+        <h2 className="text-4xl font-bold text-center">
+          How TunnelMouth Works
+        </h2>
+
+        <p className="text-center text-gray-500 mt-4 max-w-2xl mx-auto">
+          Sending a package has never been easier
+        </p>
 
 
         <div className="grid md:grid-cols-3 gap-10 mt-16">
