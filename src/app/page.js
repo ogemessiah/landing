@@ -9,9 +9,27 @@ export default function Home() {
           TunnelMouth
         </h1>
 
-        <p className="mt-6 text-xl max-w-2xl mx-auto text-gray-300">
-          We connect you with trusted couriers instantly
-        </p>
+        <div className="mt-10 flex justify-center items-center gap-4 flex-wrap">
+
+          {/* Google Play */}
+          <a href="#">
+            <img
+              src="/images/google-play-badge.png"
+              alt="Get it on Google Play"
+              className="h-16 hover:scale-105 transition duration-300"
+            />
+          </a>
+
+          {/* Apple App Store */}
+          <a href="#">
+            <img
+              src="/images/app-store-badge.svg"
+              alt="Download on the App Store"
+              className="h-16 hover:scale-105 transition duration-300"
+            />
+          </a>
+
+        </div>
 
         
 
