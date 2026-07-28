@@ -262,11 +262,6 @@ export default function Home() {
 
               <ul className="space-y-3 text-gray-400">
 
-                <li>
-                  <a href="#" className="hover:text-white transition">
-                    About Us
-                  </a>
-                </li>
 
                 <li>
                   <a href="#" className="hover:text-white transition">
