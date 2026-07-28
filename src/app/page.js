@@ -25,7 +25,7 @@ export default function Home() {
             <img
               src="/images/app-store-badge.svg"
               alt="Download on the App Store"
-              className="h-14 w-auto"
+              className="h-16 w-auto"
             />
           </a>
 
@@ -43,6 +43,10 @@ export default function Home() {
         <h2 className="text-4xl font-bold text-center">
           Why choose TunnelMouth?
         </h2>
+
+        <p className="text-center text-gray-500 mt-4 max-w-2xl mx-auto">
+          We make sending packages simple, affordable and reliable.
+        </p>
 
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
