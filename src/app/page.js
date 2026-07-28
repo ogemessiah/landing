@@ -14,7 +14,7 @@ export default function Home() {
           {/* Google Play */}
           <a href="#">
             <img
-              src="/images/google-play-badge.png"
+              src="/images/google-play-badge.svg"
               alt="Get it on Google Play"
               className="h-14 w-auto"
             />
