@@ -40,6 +40,10 @@ export default function Home() {
 
       <section className="px-6 py-24 bg-gray-50">
 
+        <h2 className="text-4xl font-bold text-center">
+          Why choose TunnelMouth?
+        </h2>
+
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
 
