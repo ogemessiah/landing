@@ -16,7 +16,7 @@ export default function Home() {
             <img
               src="/images/google-play-badge.png"
               alt="Get it on Google Play"
-              className="h-16 hover:scale-105 transition duration-300"
+              className="h-14 w-auto"
             />
           </a>
 
@@ -25,7 +25,7 @@ export default function Home() {
             <img
               src="/images/app-store-badge.svg"
               alt="Download on the App Store"
-              className="h-16 hover:scale-105 transition duration-300"
+              className="h-14 w-auto"
             />
           </a>
 
@@ -39,10 +39,6 @@ export default function Home() {
       {/* FEATURES */}
 
       <section className="px-6 py-24 bg-gray-50">
-
-        <h2 className="text-4xl font-bold text-center">
-          Why choose TunnelMouth?
-        </h2>
 
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
