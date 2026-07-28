@@ -3,9 +3,9 @@ export default function Home() {
     <main className="min-h-screen bg-white text-black">
 
       {/* HERO */}
-      <section className="bg-gradient-to-br from-[#40203f] to-black text-white px-6 py-24 text-center">
+      <section className="bg-gradient-to-br from-[#40203f] to-black text-white px-6 py-20 text-center">
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
           TunnelMouth
         </h1>
 
@@ -26,9 +26,6 @@ export default function Home() {
           Why choose TunnelMouth?
         </h2>
 
-        <p className="text-center text-gray-500 mt-4 max-w-2xl mx-auto">
-          We make sending packages simple, affordable and reliable.
-        </p>
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
 
@@ -97,13 +94,6 @@ export default function Home() {
 
       <section className="px-6 py-24 bg-white">
 
-        <h2 className="text-4xl font-bold text-center">
-          How TunnelMouth Works
-        </h2>
-
-        <p className="text-center text-gray-500 mt-4 max-w-2xl mx-auto">
-          Sending a package has never been easier.
-        </p>
 
         <div className="grid md:grid-cols-3 gap-10 mt-16">
 
