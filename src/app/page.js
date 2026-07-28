@@ -331,8 +331,7 @@ export default function Home() {
           <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
 
             <p className="text-gray-500">
-              © 2026 TunnelMouth Technologies Limited.
-              All rights reserved.
+              © {new Date().getFullYear()} TunnelMouth Technologies Limited
             </p>
 
             <div className="flex gap-6 mt-5 md:mt-0">
@@ -344,8 +343,6 @@ export default function Home() {
               <a href="#" className="text-gray-400 hover:text-white transition">
                 Instagram
               </a>
-
-
 
             </div>
 
