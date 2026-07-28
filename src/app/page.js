@@ -2,76 +2,399 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black">
 
-      {/* HERO SECTION */}
-      <section className="px-6 py-20 text-center">
-        <h1 className="text-5xl font-bold">
+      {/* HERO */}
+      <section className="bg-gradient-to-br from-[#40203f] to-black text-white px-6 py-24 text-center">
+
+        <h1 className="text-6xl font-extrabold tracking-tight">
           TunnelMouth
         </h1>
 
-        <p className="mt-6 text-xl text-gray-600">
-          We connect you with trusted couriers instantly.
+        <p className="mt-6 text-xl max-w-2xl mx-auto text-gray-300">
+          The smarter way to send anything.
+          Compare trusted couriers, choose the best price,
+          and track every delivery in real time.
         </p>
 
-        <div className="mt-8 flex gap-4 justify-center">
-          <button className="bg-black text-white px-6 py-3 rounded-xl">
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
+
+          <button className="bg-white text-black px-8 py-4 rounded-xl font-semibold hover:bg-gray-200 transition">
             Download App
           </button>
-        </div>
-      </section>
 
+          <button className="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-black transition">
+            Become a Courier
+          </button>
+
+        </div>
+
+      </section>
       
 
-      {/* VALUE PROPOSITION */}
-      <section className="px-6 py-16 bg-gray-100">
-        <h2 className="text-3xl font-bold text-center">
-          Why TunnelMouth?
+      {/* FEATURES */}
+
+      <section className="px-6 py-24 bg-gray-50">
+
+        <h2 className="text-4xl font-bold text-center">
+          Why choose TunnelMouth?
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8 mt-10">
+        <p className="text-center text-gray-500 mt-4 max-w-2xl mx-auto">
+          We make sending packages simple, affordable and reliable.
+        </p>
 
-          <div className="bg-white p-6 rounded-2xl">
-            <h3 className="text-xl font-bold">
-              Affordable Pricing
+        <div className="grid md:grid-cols-3 gap-8 mt-16">
+
+          {/* Card */}
+
+          <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 p-8">
+
+            <div className="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl">
+              🚚
+            </div>
+
+            <h3 className="text-2xl font-bold mt-6">
+              Trusted Couriers
             </h3>
 
-            <p className="mt-4 text-gray-600">
-              Compare delivery drivers and choose the best option.
+            <p className="text-gray-600 mt-4 leading-7">
+              Every delivery partner is verified before joining
+              TunnelMouth so your packages stay safe.
             </p>
+
           </div>
 
-          <div className="bg-white p-6 rounded-2xl">
-            <h3 className="text-xl font-bold">
-              Fast Delivery
+          {/* Card */}
+
+          <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 p-8">
+
+            <div className="w-16 h-16 rounded-2xl bg-green-100 flex items-center justify-center text-3xl">
+              💰
+            </div>
+
+            <h3 className="text-2xl font-bold mt-6">
+              Best Prices
             </h3>
 
-            <p className="mt-4 text-gray-600">
-              Real-time driver availability for quick dispatch.
+            <p className="text-gray-600 mt-4 leading-7">
+              Compare prices from multiple couriers and choose
+              the one that fits your budget.
             </p>
+
           </div>
 
-          <div className="bg-white p-6 rounded-2xl">
-            <h3 className="text-xl font-bold">
-              Trusted Drivers
+          {/* Card */}
+
+          <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 p-8">
+
+            <div className="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl">
+              📍
+            </div>
+
+            <h3 className="text-2xl font-bold mt-6">
+              Live Tracking
             </h3>
 
-            <p className="mt-4 text-gray-600">
-              Verified delivery partners for safer transactions.
+            <p className="text-gray-600 mt-4 leading-7">
+              Track every delivery from pickup to destination
+              in real time.
             </p>
+
           </div>
 
         </div>
+
       </section>
 
-      {/* CONTACT */}
-      <section className="px-6 py-20 text-center">
-        <h2 className="text-3xl font-bold">
-          Contact Us
+      {/* HOW IT WORKS */}
+
+      <section className="px-6 py-24 bg-white">
+
+        <h2 className="text-4xl font-bold text-center">
+          How TunnelMouth Works
         </h2>
 
-        <p className="mt-4 text-gray-600">
-          support@tunnelmouth.com
+        <p className="text-center text-gray-500 mt-4 max-w-2xl mx-auto">
+          Sending a package has never been easier.
         </p>
+
+        <div className="grid md:grid-cols-3 gap-10 mt-16">
+
+          {/* Step 1 */}
+
+          <div className="text-center">
+
+            <div className="w-20 h-20 mx-auto rounded-full bg-[#40203f] text-white flex items-center justify-center text-3xl font-bold">
+              1
+            </div>
+
+            <h3 className="text-2xl font-bold mt-6">
+              Create a Delivery
+            </h3>
+
+            <p className="text-gray-600 mt-4 leading-7">
+              Enter your pickup location, destination and package details in seconds.
+            </p>
+
+          </div>
+
+          {/* Step 2 */}
+
+          <div className="text-center">
+
+            <div className="w-20 h-20 mx-auto rounded-full bg-[#40203f] text-white flex items-center justify-center text-3xl font-bold">
+              2
+            </div>
+
+            <h3 className="text-2xl font-bold mt-6">
+              Compare Couriers
+            </h3>
+
+            <p className="text-gray-600 mt-4 leading-7">
+              View available couriers, compare prices, ratings and delivery options before choosing.
+            </p>
+
+          </div>
+
+          {/* Step 3 */}
+
+          <div className="text-center">
+
+            <div className="w-20 h-20 mx-auto rounded-full bg-[#40203f] text-white flex items-center justify-center text-3xl font-bold">
+              3
+            </div>
+
+            <h3 className="text-2xl font-bold mt-6">
+              Track Your Delivery
+            </h3>
+
+            <p className="text-gray-600 mt-4 leading-7">
+              Follow your package in real time until it reaches its destination safely.
+            </p>
+
+          </div>
+
+        </div>
+
       </section>
+
+
+      {/* APP SHOWCASE */}
+
+      <section className="bg-gradient-to-br from-[#40203f] to-black text-white px-6 py-24">
+
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+          {/* Left */}
+
+          <div>
+
+            <h2 className="text-5xl font-bold leading-tight">
+              Deliver Anything.
+              <br />
+              Anytime.
+            </h2>
+
+            <p className="mt-8 text-xl text-gray-300 leading-9">
+
+              TunnelMouth lets you request deliveries,
+              compare courier prices,
+              pay securely,
+              and track every order from pickup
+              to destination.
+
+            </p>
+
+            <div className="mt-10 flex flex-wrap gap-4">
+
+              {/* Google Play */}
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.tunnelmouth.customer"
+                target="_blank"
+                className="bg-white rounded-xl px-6 py-4 text-black font-semibold hover:bg-gray-200 transition"
+              >
+                📲 Get it on Google Play
+              </a>
+
+            </div>
+
+          </div>
+
+
+          {/* Right */}
+
+          <div className="grid grid-cols-2 gap-6 justify-items-center">
+
+            <div className="w-[180px] md:w-[210px] rounded-[35px] overflow-hidden border-[7px] border-black shadow-2xl hover:-translate-y-3 transition duration-500">
+              <img
+                src="/images/signin-phone.png"
+                className="w-full h-auto object-contain"
+                alt="Sign in"
+              />
+            </div>
+
+
+            <div className="w-[180px] md:w-[210px] rounded-[35px] overflow-hidden border-[7px] border-black shadow-2xl hover:-translate-y-3 transition duration-500">
+              <img
+                src="/images/home-phone.png"
+                className="w-full h-auto object-contain"
+                alt="Home"
+              />
+            </div>
+
+
+            <div className="w-[180px] md:w-[210px] rounded-[35px] overflow-hidden border-[7px] border-black shadow-2xl hover:-translate-y-3 transition duration-500">
+              <img
+                src="/images/payment-phone.png"
+                className="w-full h-auto object-contain"
+                alt="Payment"
+              />
+            </div>
+
+            <div className="w-[180px] md:w-[210px] rounded-[35px] overflow-hidden border-[7px] border-black shadow-2xl hover:-translate-y-3 transition duration-500">
+              <img
+                src="/images/paystack-phone.png"
+                className="w-full h-auto object-contain"
+                alt="Paystack"
+              />
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* FOOTER */}
+
+      <footer className="bg-[#111111] text-white">
+
+        <div className="max-w-6xl mx-auto px-6 py-20">
+
+          <div className="grid md:grid-cols-4 gap-12">
+
+            {/* Company */}
+
+            <div>
+
+              <h2 className="text-3xl font-bold">
+                TunnelMouth
+              </h2>
+
+              <p className="mt-5 text-gray-400 leading-7">
+                Connecting customers with trusted delivery
+                partners through a fast, affordable and secure
+                marketplace.
+              </p>
+
+            </div>
+
+            {/* Company Links */}
+
+            <div>
+
+              <h3 className="text-xl font-semibold mb-5">
+                Company
+              </h3>
+
+              <ul className="space-y-3 text-gray-400">
+
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    About Us
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Become a Courier
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Careers
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+            {/* Legal */}
+
+            <div>
+
+              <h3 className="text-xl font-semibold mb-5">
+                Legal
+              </h3>
+
+              <ul className="space-y-3 text-gray-400">
+
+                <li>
+                  <a href="/privacy-policy" className="hover:text-white transition">
+                    Privacy Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/terms" className="hover:text-white transition">
+                    Terms & Conditions
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+            {/* Contact */}
+
+            <div>
+
+              <h3 className="text-xl font-semibold mb-5">
+                Contact
+              </h3>
+
+              <p className="text-gray-400">
+                support@tunnelmouth.com
+              </p>
+
+              <p className="text-gray-400 mt-2">
+                Delta State, Nigeria
+              </p>
+
+            </div>
+
+          </div>
+
+          <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
+
+            <p className="text-gray-500">
+              © 2026 TunnelMouth Technologies Limited.
+              All rights reserved.
+            </p>
+
+            <div className="flex gap-6 mt-5 md:mt-0">
+
+              <a href="#" className="text-gray-400 hover:text-white transition">
+                Facebook
+              </a>
+
+              <a href="#" className="text-gray-400 hover:text-white transition">
+                Instagram
+              </a>
+
+              <a href="#" className="text-gray-400 hover:text-white transition">
+                LinkedIn
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </footer>
 
     </main>
   );
