@@ -5,27 +5,15 @@ export default function Home() {
       {/* HERO */}
       <section className="bg-gradient-to-br from-[#40203f] to-black text-white px-6 py-24 text-center">
 
-        <h1 className="text-6xl font-extrabold tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
           TunnelMouth
         </h1>
 
         <p className="mt-6 text-xl max-w-2xl mx-auto text-gray-300">
-          The smarter way to send anything.
-          Compare trusted couriers, choose the best price,
-          and track every delivery in real time.
+          We connect you with trusted couriers instantly
         </p>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-4">
-
-          <button className="bg-white text-black px-8 py-4 rounded-xl font-semibold hover:bg-gray-200 transition">
-            Download App
-          </button>
-
-          <button className="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-black transition">
-            Become a Courier
-          </button>
-
-        </div>
+        
 
       </section>
       
@@ -186,40 +174,7 @@ export default function Home() {
 
           {/* Left */}
 
-          <div>
-
-            <h2 className="text-5xl font-bold leading-tight">
-              Deliver Anything.
-              <br />
-              Anytime.
-            </h2>
-
-            <p className="mt-8 text-xl text-gray-300 leading-9">
-
-              TunnelMouth lets you request deliveries,
-              compare courier prices,
-              pay securely,
-              and track every order from pickup
-              to destination.
-
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-
-              {/* Google Play */}
-
-              <a
-                href="https://play.google.com/store/apps/details?id=com.tunnelmouth.customer"
-                target="_blank"
-                className="bg-white rounded-xl px-6 py-4 text-black font-semibold hover:bg-gray-200 transition"
-              >
-                📲 Get it on Google Play
-              </a>
-
-            </div>
-
-          </div>
-
+          
 
           {/* Right */}
 
@@ -275,19 +230,7 @@ export default function Home() {
 
             {/* Company */}
 
-            <div>
-
-              <h2 className="text-3xl font-bold">
-                TunnelMouth
-              </h2>
-
-              <p className="mt-5 text-gray-400 leading-7">
-                Connecting customers with trusted delivery
-                partners through a fast, affordable and secure
-                marketplace.
-              </p>
-
-            </div>
+            
 
             {/* Company Links */}
 
@@ -359,9 +302,7 @@ export default function Home() {
                 support@tunnelmouth.com
               </p>
 
-              <p className="text-gray-400 mt-2">
-                Delta State, Nigeria
-              </p>
+              
 
             </div>
 
@@ -382,10 +323,6 @@ export default function Home() {
 
               <a href="#" className="text-gray-400 hover:text-white transition">
                 Instagram
-              </a>
-
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                LinkedIn
               </a>
 
             </div>
