@@ -264,13 +264,21 @@ export default function Home() {
 
 
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <a 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdD2SWL4eRoJumvzrF6atvjSdJmCjDlqiSxFbAUDb4VdHx_dw/viewform?usp=publish-editor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition"
+                  >
                     Become a Courier
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <a 
+                    href="/careers" 
+                    className="hover:text-white transition"
+                  >
                     Careers
                   </a>
                 </li>
@@ -313,9 +321,12 @@ export default function Home() {
                 Contact
               </h3>
 
-              <p className="text-gray-400">
+              <a
+                href="mailto:support@tunnelmouth.com"
+                className="text-gray-400 hover:text-white transition"
+              >
                 support@tunnelmouth.com
-              </p>
+              </a>
 
               
 
@@ -331,11 +342,21 @@ export default function Home() {
 
             <div className="flex gap-6 mt-5 md:mt-0">
 
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a 
+                href="https://facebook.com/TunnelMouth" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition"
+              >
                 Facebook
               </a>
 
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a 
+                href="https://instagram.com/gettunnelmouth"
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-white transition"
+              >
                 Instagram
               </a>
 
