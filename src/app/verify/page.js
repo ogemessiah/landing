@@ -37,7 +37,6 @@ function VerifyContent() {
         </>
       ) : (
         <>
-          <h2>Verify Your Email</h2>
 
           <p>
             This page is used to verify your TunnelMouth account.
