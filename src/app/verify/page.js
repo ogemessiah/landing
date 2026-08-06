@@ -1,4 +1,13 @@
+'use client';
+
+import { useSearchParams } from 'next/navigation';
+
 export default function VerifyPage() {
+
+  const searchParams = useSearchParams();
+
+  const oobCode = searchParams.get('oobCode');
+
   return (
     <div
       style={{
@@ -14,8 +23,15 @@ export default function VerifyPage() {
 
       <h2>Email Verification</h2>
 
-      <p>
-        Your email has been verified successfully.
+      <p>Verification code:</p>
+
+      <p
+        style={{
+          wordBreak: "break-all",
+          color: "#666"
+        }}
+      >
+        {oobCode || "No verification code found"}
       </p>
     </div>
   );
