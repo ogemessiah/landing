@@ -24,7 +24,6 @@ function VerifyContent() {
 
       {verified === "true" ? (
         <>
-          <h2>✅ Email Verified</h2>
 
           <p>
             Your email has been verified successfully.
