@@ -94,11 +94,6 @@ function VerifyContent() {
 
       {status === "missing" && (
         <>
-          <h2>Verify Your Email</h2>
-
-          <p>
-            This page is used to verify your TunnelMouth account.
-          </p>
 
           <p>
             Please use the verification link sent to your email.
