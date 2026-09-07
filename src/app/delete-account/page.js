@@ -354,7 +354,7 @@ export default function DeleteAccountPage() {
             color: "#777",
           }}
         >
-          TunnelMouth
+          TunnelMouth Technologies Limited
         </div>
       </div>
     </main>
