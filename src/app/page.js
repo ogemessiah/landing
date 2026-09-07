@@ -6,75 +6,7 @@ export default function Home() {
           NAVIGATION
       ===================================================== */}
 
-      <header className="fixed top-0 left-0 right-0 z-50">
-        <div className="max-w-7xl mx-auto px-5 pt-4">
-          <nav className="bg-white/90 backdrop-blur-xl border border-gray-200 shadow-lg rounded-2xl px-5 py-3 flex items-center justify-between">
-
-            {/* LOGO */}
-
-            <a
-              href="/"
-              className="flex items-center gap-2"
-            >
-              <div className="w-9 h-9 rounded-xl bg-[#40203f] flex items-center justify-center">
-                <span className="text-white font-black text-lg">
-                  T
-                </span>
-              </div>
-
-              <span className="font-extrabold text-xl tracking-tight">
-                TunnelMouth
-              </span>
-            </a>
-
-
-            {/* DESKTOP LINKS */}
-
-            <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-
-              <a
-                href="#features"
-                className="hover:text-[#40203f] transition"
-              >
-                Features
-              </a>
-
-              <a
-                href="#how-it-works"
-                className="hover:text-[#40203f] transition"
-              >
-                How it works
-              </a>
-
-              <a
-                href="#app"
-                className="hover:text-[#40203f] transition"
-              >
-                The App
-              </a>
-
-              <a
-                href="/careers"
-                className="hover:text-[#40203f] transition"
-              >
-                Careers
-              </a>
-
-            </div>
-
-
-            {/* NAV CTA */}
-
-            <a
-              href="#download"
-              className="bg-[#111] text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-[#40203f] transition"
-            >
-              Get the app
-            </a>
-
-          </nav>
-        </div>
-      </header>
+     
 
 
       {/* =====================================================
