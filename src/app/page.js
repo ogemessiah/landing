@@ -8,22 +8,26 @@ export default function Home() {
 
       <header className="fixed top-0 left-0 right-0 z-50">
 
-        <div className="max-w-7xl mx-auto px-5 md:px-6 pt-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-3 sm:pt-4">
 
-          <nav className="flex items-center justify-between rounded-2xl border border-white/60 bg-white/85 backdrop-blur-xl shadow-[0_8px_35px_rgba(0,0,0,0.06)] px-4 md:px-6 py-3">
+          <nav className="flex items-center justify-between rounded-2xl border border-gray-200/80 bg-white/95 backdrop-blur-md shadow-sm px-4 sm:px-6 py-3">
 
             <a
               href="/"
               className="flex items-center gap-3"
             >
 
-              <div className="w-10 h-10 rounded-xl bg-[#40203f] text-white flex items-center justify-center shadow-lg">
-                <span className="font-black text-lg">
-                  T
-                </span>
+              <div className="w-10 h-10 flex items-center justify-center">
+                <img
+                  src="/images/logo.png"
+                  alt="TunnelMouth"
+                  width="40"
+                  height="40"
+                  className="w-full h-full object-contain"
+                />
               </div>
 
-              <span className="font-black text-xl tracking-[-0.03em]">
+              <span className="font-black text-lg sm:text-xl tracking-[-0.03em]">
                 TunnelMouth
               </span>
 
@@ -65,22 +69,7 @@ export default function Home() {
 
             <a
               href="#download"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                rounded-xl
-                bg-[#04B559]
-                text-white
-                px-5
-                py-3
-                text-sm
-                font-bold
-                shadow-[0_8px_20px_rgba(4,181,89,0.2)]
-                hover:-translate-y-0.5
-                hover:shadow-[0_12px_25px_rgba(4,181,89,0.28)]
-                transition
-              "
+              className="inline-flex items-center justify-center rounded-xl bg-[#04B559] text-white px-4 sm:px-5 py-3 text-sm font-bold hover:-translate-y-0.5 transition"
             >
               Get the app
             </a>
@@ -96,46 +85,32 @@ export default function Home() {
           HERO
       ===================================================== */}
 
-      <section className="relative overflow-hidden bg-[#faf8fb] pt-36 pb-20 md:pt-44 md:pb-28">
+      <section className="relative overflow-hidden bg-[#faf8fb] pt-32 pb-16 sm:pt-36 sm:pb-20 md:pt-44 md:pb-28">
 
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute -top-48 -right-48 w-[500px] h-[500px] rounded-full bg-purple-200/30 blur-3xl pointer-events-none" />
 
-          <div className="absolute -top-56 -right-56 w-[700px] h-[700px] rounded-full bg-purple-200/35 blur-3xl" />
-
-          <div className="absolute top-[55%] -left-64 w-[550px] h-[550px] rounded-full bg-green-100/40 blur-3xl" />
-
-          <div className="absolute top-32 left-[48%] w-2 h-2 rounded-full bg-[#04B559]/50" />
-
-          <div className="absolute top-64 left-[56%] w-3 h-3 rounded-full bg-[#40203f]/20" />
-
-        </div>
+        <div className="absolute top-[55%] -left-48 w-[400px] h-[400px] rounded-full bg-green-100/30 blur-3xl pointer-events-none" />
 
 
-        <div className="relative max-w-7xl mx-auto px-6">
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-6">
 
-          <div className="grid lg:grid-cols-[1.02fr_0.98fr] gap-14 lg:gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
 
 
             {/* HERO COPY */}
 
             <div className="max-w-2xl">
 
-              <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/90 shadow-sm px-4 py-2 text-sm font-semibold text-gray-600">
+              <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-xs sm:text-sm font-semibold text-gray-600 shadow-sm">
 
-                <span className="relative flex h-2.5 w-2.5">
-
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#04B559]/40" />
-
-                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#04B559]" />
-
-                </span>
+                <span className="w-2.5 h-2.5 rounded-full bg-[#04B559]" />
 
                 Smarter deliveries. Better prices.
 
               </div>
 
 
-              <h1 className="mt-7 text-5xl sm:text-6xl md:text-7xl lg:text-[78px] leading-[0.94] font-black tracking-[-0.055em]">
+              <h1 className="mt-6 text-5xl sm:text-6xl md:text-7xl lg:text-[76px] leading-[0.95] font-black tracking-[-0.055em]">
 
                 Send anything.
 
@@ -154,7 +129,7 @@ export default function Home() {
               </h1>
 
 
-              <p className="mt-8 text-lg md:text-xl text-gray-600 leading-8 max-w-xl">
+              <p className="mt-7 text-lg md:text-xl text-gray-600 leading-8 max-w-xl">
 
                 Compare trusted couriers, see delivery prices before
                 you choose, pay securely and track your package from
@@ -165,19 +140,20 @@ export default function Home() {
 
               <div
                 id="download"
-                className="flex items-center gap-4 flex-wrap mt-9"
+                className="flex items-center gap-3 sm:gap-4 flex-wrap mt-8"
               >
 
                 <a
                   href="#"
                   aria-label="Download TunnelMouth on Google Play"
-                  className="group"
                 >
 
                   <img
                     src="/images/google-play-badge.svg"
                     alt="Get it on Google Play"
-                    className="h-14 w-auto group-hover:scale-[1.03] transition duration-300"
+                    width="189"
+                    height="56"
+                    className="h-12 sm:h-14 w-auto"
                   />
 
                 </a>
@@ -186,13 +162,14 @@ export default function Home() {
                 <a
                   href="#"
                   aria-label="Download TunnelMouth on the App Store"
-                  className="group"
                 >
 
                   <img
                     src="/images/app-store-badge.svg"
                     alt="Download on the App Store"
-                    className="h-14 w-auto group-hover:scale-[1.03] transition duration-300"
+                    width="189"
+                    height="56"
+                    className="h-12 sm:h-14 w-auto"
                   />
 
                 </a>
@@ -200,35 +177,21 @@ export default function Home() {
               </div>
 
 
-              <div className="flex items-center gap-3 mt-6">
-
-                <div className="flex -space-x-2">
-
-                  <div className="w-8 h-8 rounded-full bg-[#40203f] border-2 border-white" />
-
-                  <div className="w-8 h-8 rounded-full bg-[#04B559] border-2 border-white" />
-
-                  <div className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white" />
-
-                </div>
-
-                <p className="text-sm text-gray-500">
-                  Built for simpler deliveries.
-                </p>
-
-              </div>
+              <p className="text-sm text-gray-400 mt-5">
+                Available for customers on mobile.
+              </p>
 
             </div>
 
 
-            {/* PHONE SHOWCASE */}
+            {/* =================================================
+                HERO PHONE
+                ================================================= */}
 
-            <div className="relative min-h-[560px] md:min-h-[650px] flex items-center justify-center lg:justify-end">
+            <div className="relative min-h-[470px] sm:min-h-[540px] flex items-center justify-center lg:justify-end">
 
 
-              {/* SOFT GLOW */}
-
-              <div className="absolute w-[330px] h-[330px] md:w-[470px] md:h-[470px] rounded-full bg-[#40203f]/10 blur-3xl" />
+              <div className="absolute w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] rounded-full bg-[#40203f]/10 blur-3xl pointer-events-none" />
 
 
               {/* BACK PHONE */}
@@ -236,25 +199,29 @@ export default function Home() {
               <div
                 className="
                   absolute
-                  w-[175px]
-                  sm:w-[205px]
-                  md:w-[235px]
-                  left-[2%]
-                  md:left-[4%]
-                  top-[18%]
-                  rotate-[-11deg]
-                  rounded-[36px]
+                  w-[155px]
+                  sm:w-[190px]
+                  md:w-[220px]
+                  left-[3%]
+                  sm:left-[7%]
+                  top-[19%]
+                  rotate-[-9deg]
+                  rounded-[32px]
                   overflow-hidden
-                  border-[7px]
+                  border-[6px]
                   border-black
-                  shadow-[0_35px_70px_rgba(0,0,0,0.18)]
-                  opacity-75
+                  shadow-xl
+                  opacity-70
                 "
               >
 
                 <img
                   src="/images/signin-phone.png"
-                  alt="TunnelMouth sign in screen"
+                  alt="TunnelMouth sign in"
+                  width="440"
+                  height="880"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto"
                 />
 
@@ -267,89 +234,40 @@ export default function Home() {
                 className="
                   relative
                   z-10
-                  w-[205px]
-                  sm:w-[235px]
-                  md:w-[285px]
-                  rounded-[44px]
+                  w-[185px]
+                  sm:w-[220px]
+                  md:w-[270px]
+                  rounded-[38px]
                   overflow-hidden
-                  border-[8px]
+                  border-[7px]
                   border-black
-                  shadow-[0_45px_100px_rgba(0,0,0,0.28)]
+                  shadow-[0_25px_60px_rgba(0,0,0,0.22)]
                   rotate-[2deg]
                 "
               >
 
                 <img
                   src="/images/home-phone.png"
-                  alt="TunnelMouth delivery app"
+                  alt="TunnelMouth app"
+                  width="540"
+                  height="1080"
+                  fetchPriority="high"
+                  decoding="async"
                   className="w-full h-auto"
                 />
 
               </div>
 
 
-              {/* FLOATING QUOTE CARD */}
+              {/* PRICE CARD */}
 
-              <div
-                className="
-                  absolute
-                  z-30
-                  top-[16%]
-                  right-0
-                  md:right-[-15px]
-                  rounded-2xl
-                  border
-                  border-white
-                  bg-white/95
-                  backdrop-blur-xl
-                  shadow-[0_20px_50px_rgba(0,0,0,0.12)]
-                  px-5
-                  py-4
-                  hidden sm:block
-                "
-              >
+              <div className="absolute z-20 bottom-[7%] right-0 sm:right-[2%] bg-white rounded-2xl border border-gray-100 shadow-xl px-4 sm:px-5 py-3 sm:py-4">
 
-                <div className="flex items-center gap-2">
-
-                  <span className="w-2 h-2 rounded-full bg-[#04B559]" />
-
-                  <p className="text-xs font-semibold text-gray-400">
-                    Instant quote
-                  </p>
-
-                </div>
-
-                <p className="text-xl font-black mt-1">
-                  Compare & choose
-                </p>
-
-              </div>
-
-
-              {/* FLOATING PRICE CARD */}
-
-              <div
-                className="
-                  absolute
-                  z-30
-                  bottom-[12%]
-                  right-[1%]
-                  md:right-[-10px]
-                  rounded-2xl
-                  border
-                  border-gray-100
-                  bg-white
-                  shadow-[0_25px_60px_rgba(0,0,0,0.15)]
-                  px-5
-                  py-4
-                "
-              >
-
-                <p className="text-xs text-gray-400 font-medium">
+                <p className="text-[11px] sm:text-xs text-gray-400">
                   Delivery from
                 </p>
 
-                <p className="text-xl font-black mt-1">
+                <p className="text-lg sm:text-xl font-black mt-0.5">
                   ₦1,500
                 </p>
 
@@ -357,7 +275,7 @@ export default function Home() {
 
                   <span className="w-2 h-2 rounded-full bg-[#04B559]" />
 
-                  <span className="text-xs text-gray-500">
+                  <span className="text-[11px] sm:text-xs text-gray-500">
                     Available courier
                   </span>
 
@@ -380,17 +298,17 @@ export default function Home() {
 
       <section className="border-y border-gray-100 bg-white">
 
-        <div className="max-w-6xl mx-auto px-6 py-8 md:py-10">
+        <div className="max-w-6xl mx-auto px-5 sm:px-6 py-8">
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-7 md:gap-8">
 
             <div className="text-center">
 
-              <p className="text-2xl font-black tracking-tight">
+              <p className="text-xl sm:text-2xl font-black">
                 Verified
               </p>
 
-              <p className="text-sm text-gray-400 mt-1">
+              <p className="text-xs sm:text-sm text-gray-400 mt-1">
                 Courier partners
               </p>
 
@@ -399,11 +317,11 @@ export default function Home() {
 
             <div className="text-center">
 
-              <p className="text-2xl font-black tracking-tight">
+              <p className="text-xl sm:text-2xl font-black">
                 Secure
               </p>
 
-              <p className="text-sm text-gray-400 mt-1">
+              <p className="text-xs sm:text-sm text-gray-400 mt-1">
                 Online payments
               </p>
 
@@ -412,11 +330,11 @@ export default function Home() {
 
             <div className="text-center">
 
-              <p className="text-2xl font-black tracking-tight">
+              <p className="text-xl sm:text-2xl font-black">
                 Real-time
               </p>
 
-              <p className="text-sm text-gray-400 mt-1">
+              <p className="text-xs sm:text-sm text-gray-400 mt-1">
                 Delivery updates
               </p>
 
@@ -425,11 +343,11 @@ export default function Home() {
 
             <div className="text-center">
 
-              <p className="text-2xl font-black tracking-tight">
+              <p className="text-xl sm:text-2xl font-black">
                 Transparent
               </p>
 
-              <p className="text-sm text-gray-400 mt-1">
+              <p className="text-xs sm:text-sm text-gray-400 mt-1">
                 Courier pricing
               </p>
 
@@ -448,12 +366,12 @@ export default function Home() {
 
       <section
         id="features"
-        className="px-6 py-28 md:py-32 bg-white"
+        className="px-5 sm:px-6 py-24 md:py-32 bg-white"
       >
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-16 items-end">
+          <div className="grid lg:grid-cols-2 gap-10 items-end">
 
             <div className="max-w-2xl">
 
@@ -461,34 +379,34 @@ export default function Home() {
                 Why TunnelMouth
               </p>
 
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] mt-4 leading-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.045em] mt-4 leading-tight">
                 Delivery without the guesswork.
               </h2>
 
             </div>
 
 
-            <p className="text-lg text-gray-500 leading-8 max-w-xl lg:justify-self-end">
-              TunnelMouth brings the essential parts of delivery into
-              one simple experience — from getting a quote to choosing
-              a courier and following your package.
+            <p className="text-lg text-gray-500 leading-8 max-w-xl">
+              One simple experience for finding couriers, comparing
+              prices, paying securely and keeping track of your
+              delivery.
             </p>
 
           </div>
 
 
-          <div className="grid md:grid-cols-3 gap-6 mt-16">
+          <div className="grid md:grid-cols-3 gap-5 mt-14">
 
 
             {/* FEATURE 1 */}
 
-            <div className="group rounded-[30px] border border-gray-200 bg-white p-8 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(64,32,63,0.10)] transition duration-500">
+            <div className="rounded-[28px] border border-gray-200 p-7 sm:p-8 bg-white">
 
-              <div className="w-14 h-14 rounded-2xl bg-[#f4eaf4] flex items-center justify-center group-hover:scale-105 transition">
+              <div className="w-14 h-14 rounded-2xl bg-[#f4eaf4] flex items-center justify-center">
 
                 <svg
-                  width="26"
-                  height="26"
+                  width="25"
+                  height="25"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#40203f"
@@ -519,13 +437,13 @@ export default function Home() {
 
             {/* FEATURE 2 */}
 
-            <div className="group rounded-[30px] border border-gray-200 bg-white p-8 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(4,181,89,0.10)] transition duration-500">
+            <div className="rounded-[28px] border border-gray-200 p-7 sm:p-8 bg-white">
 
-              <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center group-hover:scale-105 transition">
+              <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center">
 
                 <svg
-                  width="26"
-                  height="26"
+                  width="25"
+                  height="25"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#04B559"
@@ -554,13 +472,13 @@ export default function Home() {
 
             {/* FEATURE 3 */}
 
-            <div className="group rounded-[30px] border border-gray-200 bg-white p-8 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(37,99,235,0.10)] transition duration-500">
+            <div className="rounded-[28px] border border-gray-200 p-7 sm:p-8 bg-white">
 
-              <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center group-hover:scale-105 transition">
+              <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center">
 
                 <svg
-                  width="26"
-                  height="26"
+                  width="25"
+                  height="25"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#2563eb"
@@ -594,19 +512,19 @@ export default function Home() {
 
 
       {/* =====================================================
-          NIGERIA SECTION
+          BUILT FOR NIGERIA
       ===================================================== */}
 
-      <section className="relative overflow-hidden bg-[#faf8fb] px-6 py-28 md:py-32">
+      <section className="relative overflow-hidden bg-[#faf8fb] px-5 sm:px-6 py-24 md:py-32">
 
-        <div className="absolute -right-40 top-20 w-[420px] h-[420px] rounded-full bg-purple-200/30 blur-3xl" />
+        <div className="absolute -right-40 top-20 w-[380px] h-[380px] rounded-full bg-purple-200/25 blur-3xl pointer-events-none" />
 
-        <div className="absolute -left-40 bottom-0 w-[400px] h-[400px] rounded-full bg-green-100/30 blur-3xl" />
+        <div className="absolute -left-40 bottom-0 w-[350px] h-[350px] rounded-full bg-green-100/25 blur-3xl pointer-events-none" />
 
 
         <div className="relative max-w-7xl mx-auto">
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
 
             <div>
@@ -622,9 +540,9 @@ export default function Home() {
               </h2>
 
               <p className="text-lg text-gray-600 leading-8 mt-6 max-w-xl">
-                Start with a simple way to connect customers with
-                courier partners and make delivery decisions with
-                clearer pricing and useful tracking.
+                Connect with courier partners, compare delivery
+                prices and keep track of your package through one
+                straightforward experience.
               </p>
 
 
@@ -662,9 +580,9 @@ export default function Home() {
 
             <div className="relative">
 
-              <div className="rounded-[36px] bg-[#40203f] p-8 md:p-10 text-white shadow-[0_30px_80px_rgba(64,32,63,0.20)]">
+              <div className="rounded-[32px] bg-[#40203f] p-7 sm:p-9 text-white shadow-[0_25px_60px_rgba(64,32,63,0.16)]">
 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-5">
 
                   <div>
 
@@ -672,17 +590,17 @@ export default function Home() {
                       Your delivery
                     </p>
 
-                    <p className="text-2xl font-black mt-1">
+                    <p className="text-xl sm:text-2xl font-black mt-1">
                       Pickup → Destination
                     </p>
 
                   </div>
 
-                  <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center">
+                  <div className="shrink-0 w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center">
 
                     <svg
-                      width="24"
-                      height="24"
+                      width="22"
+                      height="22"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -699,11 +617,11 @@ export default function Home() {
                 </div>
 
 
-                <div className="mt-10 space-y-5">
+                <div className="mt-9 space-y-5">
 
                   <div className="flex items-center gap-4">
 
-                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                    <div className="w-10 h-10 shrink-0 rounded-full bg-white/10 flex items-center justify-center">
 
                       <span className="w-2.5 h-2.5 rounded-full bg-[#04B559]" />
 
@@ -724,12 +642,12 @@ export default function Home() {
                   </div>
 
 
-                  <div className="ml-5 h-8 border-l border-dashed border-white/20" />
+                  <div className="ml-5 h-7 border-l border-dashed border-white/20" />
 
 
                   <div className="flex items-center gap-4">
 
-                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                    <div className="w-10 h-10 shrink-0 rounded-full bg-white/10 flex items-center justify-center">
 
                       <span className="w-2.5 h-2.5 rounded-full bg-white" />
 
@@ -768,7 +686,7 @@ export default function Home() {
 
       <section
         id="how-it-works"
-        className="bg-white px-6 py-28 md:py-32"
+        className="bg-white px-5 sm:px-6 py-24 md:py-32"
       >
 
         <div className="max-w-6xl mx-auto">
@@ -791,20 +709,18 @@ export default function Home() {
           </div>
 
 
-          <div className="grid md:grid-cols-3 gap-8 mt-20">
+          <div className="grid md:grid-cols-3 gap-6 mt-16">
 
 
-            {/* STEP 1 */}
-
-            <div className="relative rounded-[30px] border border-gray-200 p-8 bg-white">
+            <div className="rounded-[28px] border border-gray-200 p-7 sm:p-8">
 
               <div className="flex items-center justify-between">
 
-                <div className="w-14 h-14 rounded-2xl bg-[#40203f] text-white flex items-center justify-center text-lg font-black shadow-lg">
+                <div className="w-14 h-14 rounded-2xl bg-[#40203f] text-white flex items-center justify-center text-lg font-black">
                   01
                 </div>
 
-                <span className="text-sm font-bold text-gray-300">
+                <span className="text-xs font-bold tracking-widest text-gray-300">
                   START
                 </span>
 
@@ -822,17 +738,15 @@ export default function Home() {
             </div>
 
 
-            {/* STEP 2 */}
-
-            <div className="relative rounded-[30px] border border-gray-200 p-8 bg-white">
+            <div className="rounded-[28px] border border-gray-200 p-7 sm:p-8">
 
               <div className="flex items-center justify-between">
 
-                <div className="w-14 h-14 rounded-2xl bg-[#40203f] text-white flex items-center justify-center text-lg font-black shadow-lg">
+                <div className="w-14 h-14 rounded-2xl bg-[#40203f] text-white flex items-center justify-center text-lg font-black">
                   02
                 </div>
 
-                <span className="text-sm font-bold text-gray-300">
+                <span className="text-xs font-bold tracking-widest text-gray-300">
                   CHOOSE
                 </span>
 
@@ -850,17 +764,15 @@ export default function Home() {
             </div>
 
 
-            {/* STEP 3 */}
-
-            <div className="relative rounded-[30px] border border-gray-200 p-8 bg-white">
+            <div className="rounded-[28px] border border-gray-200 p-7 sm:p-8">
 
               <div className="flex items-center justify-between">
 
-                <div className="w-14 h-14 rounded-2xl bg-[#04B559] text-white flex items-center justify-center text-lg font-black shadow-lg">
+                <div className="w-14 h-14 rounded-2xl bg-[#04B559] text-white flex items-center justify-center text-lg font-black">
                   03
                 </div>
 
-                <span className="text-sm font-bold text-gray-300">
+                <span className="text-xs font-bold tracking-widest text-gray-300">
                   TRACK
                 </span>
 
@@ -890,22 +802,15 @@ export default function Home() {
 
       <section
         id="app"
-        className="relative overflow-hidden bg-[#111] text-white px-6 py-28 md:py-36"
+        className="relative overflow-hidden bg-[#111] text-white px-5 sm:px-6 py-24 md:py-32"
       >
 
         <div className="absolute inset-0 bg-gradient-to-br from-[#40203f] via-[#171017] to-black" />
 
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-purple-500/10 blur-3xl" />
-
-        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-green-500/10 blur-3xl" />
-
-
         <div className="relative max-w-7xl mx-auto">
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-16 items-center">
 
-
-            {/* COPY */}
 
             <div>
 
@@ -926,43 +831,36 @@ export default function Home() {
               </p>
 
 
-              <div className="flex flex-wrap gap-4 mt-9">
+              <div className="flex flex-wrap gap-3 sm:gap-4 mt-9">
 
-                <a
-                  href="#"
-                  className="group"
-                >
+                <a href="#">
 
                   <img
                     src="/images/google-play-badge.svg"
                     alt="Get it on Google Play"
-                    className="h-14 group-hover:scale-[1.03] transition"
+                    width="189"
+                    height="56"
+                    loading="lazy"
+                    decoding="async"
+                    className="h-12 sm:h-14 w-auto"
                   />
 
                 </a>
 
 
-                <a
-                  href="#"
-                  className="group"
-                >
+                <a href="#">
 
                   <img
                     src="/images/app-store-badge.svg"
                     alt="Download on the App Store"
-                    className="h-14 group-hover:scale-[1.03] transition"
+                    width="189"
+                    height="56"
+                    loading="lazy"
+                    decoding="async"
+                    className="h-12 sm:h-14 w-auto"
                   />
 
                 </a>
-
-              </div>
-
-
-              <div className="mt-10 flex items-center gap-3 text-sm text-gray-400">
-
-                <span className="w-2 h-2 rounded-full bg-[#04B559]" />
-
-                Available for customers on mobile.
 
               </div>
 
@@ -971,7 +869,7 @@ export default function Home() {
 
             {/* PHONES */}
 
-            <div className="relative min-h-[610px]">
+            <div className="relative min-h-[520px] sm:min-h-[600px]">
 
 
               {/* PHONE 1 */}
@@ -979,25 +877,29 @@ export default function Home() {
               <div
                 className="
                   absolute
-                  w-[175px]
-                  sm:w-[205px]
-                  md:w-[225px]
+                  w-[155px]
+                  sm:w-[190px]
+                  md:w-[220px]
                   left-[2%]
                   md:left-[7%]
                   top-20
-                  rotate-[-9deg]
-                  rounded-[36px]
+                  rotate-[-8deg]
+                  rounded-[32px]
                   overflow-hidden
-                  border-[7px]
+                  border-[6px]
                   border-black
-                  shadow-[0_35px_80px_rgba(0,0,0,0.55)]
+                  shadow-2xl
                 "
               >
 
                 <img
                   src="/images/payment-phone.png"
-                  alt="TunnelMouth payment screen"
-                  className="w-full"
+                  alt="TunnelMouth payment"
+                  width="440"
+                  height="880"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto"
                 />
 
               </div>
@@ -1009,25 +911,29 @@ export default function Home() {
                 className="
                   absolute
                   z-10
-                  w-[205px]
-                  sm:w-[235px]
-                  md:w-[270px]
-                  right-[3%]
+                  w-[180px]
+                  sm:w-[215px]
+                  md:w-[255px]
+                  right-[2%]
                   md:right-[7%]
                   top-0
-                  rotate-[7deg]
-                  rounded-[40px]
+                  rotate-[6deg]
+                  rounded-[36px]
                   overflow-hidden
-                  border-[7px]
+                  border-[6px]
                   border-black
-                  shadow-[0_45px_100px_rgba(0,0,0,0.65)]
+                  shadow-2xl
                 "
               >
 
                 <img
                   src="/images/home-phone.png"
-                  alt="TunnelMouth home screen"
-                  className="w-full"
+                  alt="TunnelMouth home"
+                  width="540"
+                  height="1080"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto"
                 />
 
               </div>
@@ -1039,25 +945,29 @@ export default function Home() {
                 className="
                   absolute
                   z-20
-                  w-[175px]
-                  sm:w-[205px]
-                  md:w-[225px]
-                  left-[22%]
+                  w-[155px]
+                  sm:w-[190px]
+                  md:w-[220px]
+                  left-[21%]
                   md:left-[27%]
                   bottom-0
                   rotate-[2deg]
-                  rounded-[36px]
+                  rounded-[32px]
                   overflow-hidden
-                  border-[7px]
+                  border-[6px]
                   border-black
-                  shadow-[0_35px_80px_rgba(0,0,0,0.6)]
+                  shadow-2xl
                 "
               >
 
                 <img
                   src="/images/paystack-phone.png"
-                  alt="TunnelMouth secure payment screen"
-                  className="w-full"
+                  alt="TunnelMouth secure payment"
+                  width="440"
+                  height="880"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-auto"
                 />
 
               </div>
@@ -1077,19 +987,19 @@ export default function Home() {
 
       <section
         id="couriers"
-        className="px-6 py-28 md:py-32 bg-white"
+        className="px-5 sm:px-6 py-24 md:py-32 bg-white"
       >
 
         <div className="max-w-6xl mx-auto">
 
-          <div className="relative overflow-hidden rounded-[40px] bg-[#40203f] px-8 md:px-16 py-16 md:py-20 text-white shadow-[0_30px_80px_rgba(64,32,63,0.18)]">
+          <div className="relative overflow-hidden rounded-[36px] bg-[#40203f] px-7 sm:px-10 md:px-16 py-14 md:py-20 text-white shadow-[0_25px_60px_rgba(64,32,63,0.16)]">
 
-            <div className="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-white/10 blur-3xl" />
+            <div className="absolute -right-28 -top-28 w-80 h-80 rounded-full bg-white/10 blur-3xl pointer-events-none" />
 
-            <div className="absolute -left-32 -bottom-40 w-96 h-96 rounded-full bg-[#04B559]/10 blur-3xl" />
+            <div className="absolute -left-28 -bottom-36 w-80 h-80 rounded-full bg-[#04B559]/10 blur-3xl pointer-events-none" />
 
 
-            <div className="relative grid lg:grid-cols-[1fr_auto] gap-12 items-center">
+            <div className="relative grid lg:grid-cols-[1fr_auto] gap-10 items-center">
 
               <div>
 
@@ -1114,22 +1024,7 @@ export default function Home() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdD2SWL4eRoJumvzrF6atvjSdJmCjDlqiSxFbAUDb4VdHx_dw/viewform?usp=publish-editor"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="
-                  inline-flex
-                  items-center
-                  justify-center
-                  whitespace-nowrap
-                  bg-white
-                  text-[#40203f]
-                  px-7
-                  py-4
-                  rounded-2xl
-                  font-bold
-                  shadow-xl
-                  hover:-translate-y-1
-                  hover:shadow-2xl
-                  transition
-                "
+                className="inline-flex items-center justify-center whitespace-nowrap bg-white text-[#40203f] px-7 py-4 rounded-2xl font-bold shadow-xl hover:-translate-y-1 transition"
               >
                 Become a Courier
 
@@ -1152,10 +1047,7 @@ export default function Home() {
           FINAL CTA
       ===================================================== */}
 
-      <section className="relative overflow-hidden px-6 py-28 md:py-32 bg-[#faf8fb] text-center">
-
-        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-purple-200/25 blur-3xl" />
-
+      <section className="relative overflow-hidden px-5 sm:px-6 py-24 md:py-32 bg-[#faf8fb] text-center">
 
         <div className="relative max-w-3xl mx-auto">
 
@@ -1174,31 +1066,33 @@ export default function Home() {
           </p>
 
 
-          <div className="flex justify-center gap-4 flex-wrap mt-9">
+          <div className="flex justify-center gap-3 sm:gap-4 flex-wrap mt-9">
 
-            <a
-              href="#"
-              className="group"
-            >
+            <a href="#">
 
               <img
                 src="/images/google-play-badge.svg"
                 alt="Get it on Google Play"
-                className="h-14 group-hover:scale-[1.03] transition"
+                width="189"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                className="h-12 sm:h-14 w-auto"
               />
 
             </a>
 
 
-            <a
-              href="#"
-              className="group"
-            >
+            <a href="#">
 
               <img
                 src="/images/app-store-badge.svg"
                 alt="Download on the App Store"
-                className="h-14 group-hover:scale-[1.03] transition"
+                width="189"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                className="h-12 sm:h-14 w-auto"
               />
 
             </a>
@@ -1216,26 +1110,28 @@ export default function Home() {
 
       <footer className="bg-[#0d0d0d] text-white">
 
-        <div className="max-w-7xl mx-auto px-6 py-20">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 py-16 md:py-20">
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
 
             {/* BRAND */}
 
-            <div className="lg:col-span-1">
+            <div>
 
               <a
                 href="/"
                 className="flex items-center gap-3"
               >
 
-                <div className="w-10 h-10 rounded-xl bg-[#40203f] flex items-center justify-center">
-
-                  <span className="font-black text-lg">
-                    T
-                  </span>
-
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img
+                    src="/images/logo.png"
+                    alt="TunnelMouth"
+                    width="40"
+                    height="40"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
 
                 <span className="font-black text-xl">
@@ -1369,8 +1265,6 @@ export default function Home() {
 
           </div>
 
-
-          {/* BOTTOM */}
 
           <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between gap-4">
 
