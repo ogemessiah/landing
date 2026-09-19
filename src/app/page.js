@@ -6,43 +6,139 @@ export default function Home() {
           NAVIGATION
       ===================================================== */}
 
-     
+      <header className="fixed top-0 left-0 right-0 z-50">
+
+        <div className="max-w-7xl mx-auto px-5 md:px-6 pt-4">
+
+          <nav className="flex items-center justify-between rounded-2xl border border-white/60 bg-white/85 backdrop-blur-xl shadow-[0_8px_35px_rgba(0,0,0,0.06)] px-4 md:px-6 py-3">
+
+            <a
+              href="/"
+              className="flex items-center gap-3"
+            >
+
+              <div className="w-10 h-10 rounded-xl bg-[#40203f] text-white flex items-center justify-center shadow-lg">
+                <span className="font-black text-lg">
+                  T
+                </span>
+              </div>
+
+              <span className="font-black text-xl tracking-[-0.03em]">
+                TunnelMouth
+              </span>
+
+            </a>
+
+
+            <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+
+              <a
+                href="#features"
+                className="hover:text-[#40203f] transition"
+              >
+                Features
+              </a>
+
+              <a
+                href="#how-it-works"
+                className="hover:text-[#40203f] transition"
+              >
+                How it works
+              </a>
+
+              <a
+                href="#app"
+                className="hover:text-[#40203f] transition"
+              >
+                The app
+              </a>
+
+              <a
+                href="#couriers"
+                className="hover:text-[#40203f] transition"
+              >
+                For couriers
+              </a>
+
+            </div>
+
+
+            <a
+              href="#download"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                rounded-xl
+                bg-[#04B559]
+                text-white
+                px-5
+                py-3
+                text-sm
+                font-bold
+                shadow-[0_8px_20px_rgba(4,181,89,0.2)]
+                hover:-translate-y-0.5
+                hover:shadow-[0_12px_25px_rgba(4,181,89,0.28)]
+                transition
+              "
+            >
+              Get the app
+            </a>
+
+          </nav>
+
+        </div>
+
+      </header>
 
 
       {/* =====================================================
           HERO
       ===================================================== */}
 
-      <section className="relative overflow-hidden bg-[#faf8fb] pt-40 pb-24 md:pt-48 md:pb-32">
+      <section className="relative overflow-hidden bg-[#faf8fb] pt-36 pb-20 md:pt-44 md:pb-28">
 
-        {/* BACKGROUND GLOW */}
+        <div className="absolute inset-0 pointer-events-none">
 
-        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-purple-200/40 rounded-full blur-3xl" />
+          <div className="absolute -top-56 -right-56 w-[700px] h-[700px] rounded-full bg-purple-200/35 blur-3xl" />
 
-        <div className="absolute top-80 -left-40 w-[400px] h-[400px] bg-green-100/40 rounded-full blur-3xl" />
+          <div className="absolute top-[55%] -left-64 w-[550px] h-[550px] rounded-full bg-green-100/40 blur-3xl" />
+
+          <div className="absolute top-32 left-[48%] w-2 h-2 rounded-full bg-[#04B559]/50" />
+
+          <div className="absolute top-64 left-[56%] w-3 h-3 rounded-full bg-[#40203f]/20" />
+
+        </div>
 
 
         <div className="relative max-w-7xl mx-auto px-6">
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-[1.02fr_0.98fr] gap-14 lg:gap-8 items-center">
 
 
-            {/* LEFT */}
+            {/* HERO COPY */}
 
             <div className="max-w-2xl">
 
-              <div className="inline-flex items-center gap-2 bg-white border border-gray-200 shadow-sm rounded-full px-4 py-2 text-sm font-semibold text-gray-600 mb-7">
+              <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/90 shadow-sm px-4 py-2 text-sm font-semibold text-gray-600">
 
-                <span className="w-2 h-2 rounded-full bg-[#04B559]" />
+                <span className="relative flex h-2.5 w-2.5">
+
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#04B559]/40" />
+
+                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#04B559]" />
+
+                </span>
 
                 Smarter deliveries. Better prices.
 
               </div>
 
 
-              <h1 className="text-5xl md:text-6xl lg:text-[76px] leading-[0.98] font-black tracking-[-0.045em]">
+              <h1 className="mt-7 text-5xl sm:text-6xl md:text-7xl lg:text-[78px] leading-[0.94] font-black tracking-[-0.055em]">
 
                 Send anything.
+
                 <br />
 
                 <span className="text-[#40203f]">
@@ -51,48 +147,52 @@ export default function Home() {
 
                 <br />
 
-                Simply.
+                <span className="text-[#04B559]">
+                  Simply.
+                </span>
 
               </h1>
 
 
-              <p className="mt-7 text-lg md:text-xl text-gray-600 leading-8 max-w-xl">
+              <p className="mt-8 text-lg md:text-xl text-gray-600 leading-8 max-w-xl">
 
-                Compare trusted couriers, find the best delivery price,
-                pay securely and track your package from pickup to
-                destination.
+                Compare trusted couriers, see delivery prices before
+                you choose, pay securely and track your package from
+                pickup to destination.
 
               </p>
 
-
-              {/* DOWNLOAD BUTTONS */}
 
               <div
                 id="download"
                 className="flex items-center gap-4 flex-wrap mt-9"
               >
 
-                {/* GOOGLE PLAY */}
-
-                <a href="#">
+                <a
+                  href="#"
+                  aria-label="Download TunnelMouth on Google Play"
+                  className="group"
+                >
 
                   <img
                     src="/images/google-play-badge.svg"
                     alt="Get it on Google Play"
-                    className="h-14 w-auto hover:scale-105 transition"
+                    className="h-14 w-auto group-hover:scale-[1.03] transition duration-300"
                   />
 
                 </a>
 
 
-                {/* APP STORE */}
-
-                <a href="#">
+                <a
+                  href="#"
+                  aria-label="Download TunnelMouth on the App Store"
+                  className="group"
+                >
 
                   <img
                     src="/images/app-store-badge.svg"
                     alt="Download on the App Store"
-                    className="h-14 w-auto hover:scale-105 transition"
+                    className="h-14 w-auto group-hover:scale-[1.03] transition duration-300"
                   />
 
                 </a>
@@ -100,39 +200,61 @@ export default function Home() {
               </div>
 
 
-              <p className="text-sm text-gray-400 mt-5">
-                Available for customers on mobile.
-              </p>
+              <div className="flex items-center gap-3 mt-6">
+
+                <div className="flex -space-x-2">
+
+                  <div className="w-8 h-8 rounded-full bg-[#40203f] border-2 border-white" />
+
+                  <div className="w-8 h-8 rounded-full bg-[#04B559] border-2 border-white" />
+
+                  <div className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white" />
+
+                </div>
+
+                <p className="text-sm text-gray-500">
+                  Built for simpler deliveries.
+                </p>
+
+              </div>
 
             </div>
 
 
-            {/* RIGHT — PHONE SHOWCASE */}
+            {/* PHONE SHOWCASE */}
 
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="relative min-h-[560px] md:min-h-[650px] flex items-center justify-center lg:justify-end">
+
+
+              {/* SOFT GLOW */}
+
+              <div className="absolute w-[330px] h-[330px] md:w-[470px] md:h-[470px] rounded-full bg-[#40203f]/10 blur-3xl" />
+
 
               {/* BACK PHONE */}
 
               <div
                 className="
                   absolute
-                  w-[190px]
-                  md:w-[230px]
-                  rotate-[-10deg]
-                  translate-x-[-80px]
-                  translate-y-[35px]
-                  opacity-60
-                  rounded-[38px]
+                  w-[175px]
+                  sm:w-[205px]
+                  md:w-[235px]
+                  left-[2%]
+                  md:left-[4%]
+                  top-[18%]
+                  rotate-[-11deg]
+                  rounded-[36px]
                   overflow-hidden
                   border-[7px]
                   border-black
-                  shadow-2xl
+                  shadow-[0_35px_70px_rgba(0,0,0,0.18)]
+                  opacity-75
                 "
               >
 
                 <img
                   src="/images/signin-phone.png"
-                  alt="TunnelMouth sign in"
+                  alt="TunnelMouth sign in screen"
                   className="w-full h-auto"
                 />
 
@@ -145,22 +267,61 @@ export default function Home() {
                 className="
                   relative
                   z-10
-                  w-[230px]
-                  md:w-[280px]
-                  rounded-[42px]
+                  w-[205px]
+                  sm:w-[235px]
+                  md:w-[285px]
+                  rounded-[44px]
                   overflow-hidden
                   border-[8px]
                   border-black
-                  shadow-[0_40px_100px_rgba(0,0,0,0.28)]
-                  rotate-[3deg]
+                  shadow-[0_45px_100px_rgba(0,0,0,0.28)]
+                  rotate-[2deg]
                 "
               >
 
                 <img
                   src="/images/home-phone.png"
-                  alt="TunnelMouth home screen"
+                  alt="TunnelMouth delivery app"
                   className="w-full h-auto"
                 />
+
+              </div>
+
+
+              {/* FLOATING QUOTE CARD */}
+
+              <div
+                className="
+                  absolute
+                  z-30
+                  top-[16%]
+                  right-0
+                  md:right-[-15px]
+                  rounded-2xl
+                  border
+                  border-white
+                  bg-white/95
+                  backdrop-blur-xl
+                  shadow-[0_20px_50px_rgba(0,0,0,0.12)]
+                  px-5
+                  py-4
+                  hidden sm:block
+                "
+              >
+
+                <div className="flex items-center gap-2">
+
+                  <span className="w-2 h-2 rounded-full bg-[#04B559]" />
+
+                  <p className="text-xs font-semibold text-gray-400">
+                    Instant quote
+                  </p>
+
+                </div>
+
+                <p className="text-xl font-black mt-1">
+                  Compare & choose
+                </p>
 
               </div>
 
@@ -170,18 +331,17 @@ export default function Home() {
               <div
                 className="
                   absolute
-                  z-20
-                  bottom-8
-                  right-0
-                  md:right-[-25px]
-                  bg-white
+                  z-30
+                  bottom-[12%]
+                  right-[1%]
+                  md:right-[-10px]
                   rounded-2xl
-                  shadow-2xl
                   border
                   border-gray-100
+                  bg-white
+                  shadow-[0_25px_60px_rgba(0,0,0,0.15)]
                   px-5
                   py-4
-                  hidden sm:block
                 "
               >
 
@@ -193,12 +353,12 @@ export default function Home() {
                   ₦1,500
                 </p>
 
-                <div className="flex items-center gap-1 mt-1">
+                <div className="flex items-center gap-1.5 mt-1">
 
                   <span className="w-2 h-2 rounded-full bg-[#04B559]" />
 
                   <span className="text-xs text-gray-500">
-                    Verified courier
+                    Available courier
                   </span>
 
                 </div>
@@ -220,51 +380,59 @@ export default function Home() {
 
       <section className="border-y border-gray-100 bg-white">
 
-        <div className="max-w-6xl mx-auto px-6 py-8">
+        <div className="max-w-6xl mx-auto px-6 py-8 md:py-10">
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
 
-            <div>
-              <p className="font-black text-lg">
+            <div className="text-center">
+
+              <p className="text-2xl font-black tracking-tight">
                 Verified
               </p>
 
               <p className="text-sm text-gray-400 mt-1">
                 Courier partners
               </p>
+
             </div>
 
 
-            <div>
-              <p className="font-black text-lg">
+            <div className="text-center">
+
+              <p className="text-2xl font-black tracking-tight">
                 Secure
               </p>
 
               <p className="text-sm text-gray-400 mt-1">
                 Online payments
               </p>
+
             </div>
 
 
-            <div>
-              <p className="font-black text-lg">
+            <div className="text-center">
+
+              <p className="text-2xl font-black tracking-tight">
                 Real-time
               </p>
 
               <p className="text-sm text-gray-400 mt-1">
-                Delivery tracking
+                Delivery updates
               </p>
+
             </div>
 
 
-            <div>
-              <p className="font-black text-lg">
+            <div className="text-center">
+
+              <p className="text-2xl font-black tracking-tight">
                 Transparent
               </p>
 
               <p className="text-sm text-gray-400 mt-1">
                 Courier pricing
               </p>
+
             </div>
 
           </div>
@@ -280,25 +448,30 @@ export default function Home() {
 
       <section
         id="features"
-        className="px-6 py-28 bg-white"
+        className="px-6 py-28 md:py-32 bg-white"
       >
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="max-w-2xl">
+          <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-16 items-end">
 
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#40203f]">
-              Why TunnelMouth
-            </p>
+            <div className="max-w-2xl">
 
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight mt-4">
-              Everything you need for a better delivery.
-            </h2>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#40203f]">
+                Why TunnelMouth
+              </p>
 
-            <p className="text-lg text-gray-500 mt-5 leading-8">
-              One simple platform for finding couriers, comparing
-              prices, paying securely and keeping an eye on your
-              delivery.
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] mt-4 leading-tight">
+                Delivery without the guesswork.
+              </h2>
+
+            </div>
+
+
+            <p className="text-lg text-gray-500 leading-8 max-w-xl lg:justify-self-end">
+              TunnelMouth brings the essential parts of delivery into
+              one simple experience — from getting a quote to choosing
+              a courier and following your package.
             </p>
 
           </div>
@@ -309,9 +482,9 @@ export default function Home() {
 
             {/* FEATURE 1 */}
 
-            <div className="group rounded-3xl border border-gray-200 p-8 hover:-translate-y-2 hover:shadow-2xl transition duration-500">
+            <div className="group rounded-[30px] border border-gray-200 bg-white p-8 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(64,32,63,0.10)] transition duration-500">
 
-              <div className="w-14 h-14 rounded-2xl bg-[#f4eaf4] flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-[#f4eaf4] flex items-center justify-center group-hover:scale-105 transition">
 
                 <svg
                   width="26"
@@ -337,7 +510,7 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-500 leading-7 mt-4">
-                Delivery partners are reviewed and verified before
+                Courier partners are reviewed and verified before
                 joining the TunnelMouth marketplace.
               </p>
 
@@ -346,9 +519,9 @@ export default function Home() {
 
             {/* FEATURE 2 */}
 
-            <div className="group rounded-3xl border border-gray-200 p-8 hover:-translate-y-2 hover:shadow-2xl transition duration-500">
+            <div className="group rounded-[30px] border border-gray-200 bg-white p-8 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(4,181,89,0.10)] transition duration-500">
 
-              <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-green-50 flex items-center justify-center group-hover:scale-105 transition">
 
                 <svg
                   width="26"
@@ -372,8 +545,8 @@ export default function Home() {
               </h3>
 
               <p className="text-gray-500 leading-7 mt-4">
-                See courier pricing before you choose. Pick the
-                delivery option that works best for you.
+                See available courier pricing before you choose and
+                select the delivery option that suits you.
               </p>
 
             </div>
@@ -381,9 +554,9 @@ export default function Home() {
 
             {/* FEATURE 3 */}
 
-            <div className="group rounded-3xl border border-gray-200 p-8 hover:-translate-y-2 hover:shadow-2xl transition duration-500">
+            <div className="group rounded-[30px] border border-gray-200 bg-white p-8 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(37,99,235,0.10)] transition duration-500">
 
-              <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center group-hover:scale-105 transition">
 
                 <svg
                   width="26"
@@ -403,13 +576,182 @@ export default function Home() {
 
 
               <h3 className="text-2xl font-bold mt-7">
-                Live tracking
+                Track your delivery
               </h3>
 
               <p className="text-gray-500 leading-7 mt-4">
-                Follow your package as it moves from pickup to
-                destination with real-time delivery updates.
+                Follow your package through delivery updates from
+                pickup to destination.
               </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          NIGERIA SECTION
+      ===================================================== */}
+
+      <section className="relative overflow-hidden bg-[#faf8fb] px-6 py-28 md:py-32">
+
+        <div className="absolute -right-40 top-20 w-[420px] h-[420px] rounded-full bg-purple-200/30 blur-3xl" />
+
+        <div className="absolute -left-40 bottom-0 w-[400px] h-[400px] rounded-full bg-green-100/30 blur-3xl" />
+
+
+        <div className="relative max-w-7xl mx-auto">
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+
+            <div>
+
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#40203f]">
+                Built for Nigeria
+              </p>
+
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.045em] mt-4 leading-[1.02]">
+                Local deliveries,
+                <br />
+                made simpler.
+              </h2>
+
+              <p className="text-lg text-gray-600 leading-8 mt-6 max-w-xl">
+                Start with a simple way to connect customers with
+                courier partners and make delivery decisions with
+                clearer pricing and useful tracking.
+              </p>
+
+
+              <div className="grid grid-cols-2 gap-4 mt-9 max-w-lg">
+
+                <div className="rounded-2xl bg-white border border-gray-100 p-5 shadow-sm">
+
+                  <p className="text-2xl font-black text-[#40203f]">
+                    Lagos
+                  </p>
+
+                  <p className="text-sm text-gray-400 mt-1">
+                    Launch market
+                  </p>
+
+                </div>
+
+
+                <div className="rounded-2xl bg-white border border-gray-100 p-5 shadow-sm">
+
+                  <p className="text-2xl font-black text-[#04B559]">
+                    ₦
+                  </p>
+
+                  <p className="text-sm text-gray-400 mt-1">
+                    Nigerian pricing
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div className="relative">
+
+              <div className="rounded-[36px] bg-[#40203f] p-8 md:p-10 text-white shadow-[0_30px_80px_rgba(64,32,63,0.20)]">
+
+                <div className="flex items-center justify-between">
+
+                  <div>
+
+                    <p className="text-sm text-purple-200">
+                      Your delivery
+                    </p>
+
+                    <p className="text-2xl font-black mt-1">
+                      Pickup → Destination
+                    </p>
+
+                  </div>
+
+                  <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center">
+
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M3 12h18" />
+                      <path d="m14 6 6 6-6 6" />
+                    </svg>
+
+                  </div>
+
+                </div>
+
+
+                <div className="mt-10 space-y-5">
+
+                  <div className="flex items-center gap-4">
+
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#04B559]" />
+
+                    </div>
+
+                    <div>
+
+                      <p className="text-sm text-purple-200">
+                        Pickup
+                      </p>
+
+                      <p className="font-semibold">
+                        Choose your pickup location
+                      </p>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className="ml-5 h-8 border-l border-dashed border-white/20" />
+
+
+                  <div className="flex items-center gap-4">
+
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+
+                      <span className="w-2.5 h-2.5 rounded-full bg-white" />
+
+                    </div>
+
+                    <div>
+
+                      <p className="text-sm text-purple-200">
+                        Destination
+                      </p>
+
+                      <p className="font-semibold">
+                        Enter where it needs to go
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
 
             </div>
 
@@ -426,7 +768,7 @@ export default function Home() {
 
       <section
         id="how-it-works"
-        className="bg-[#faf8fb] px-6 py-28"
+        className="bg-white px-6 py-28 md:py-32"
       >
 
         <div className="max-w-6xl mx-auto">
@@ -437,29 +779,38 @@ export default function Home() {
               Simple by design
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-black mt-4">
-              From pickup to destination.
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] mt-4">
+              Three steps. One simple delivery.
             </h2>
 
-            <p className="text-gray-500 text-lg mt-5">
-              Sending a package shouldn't require a complicated process.
+            <p className="text-gray-500 text-lg leading-8 mt-5">
+              Create your delivery, compare available couriers and
+              follow your package through to destination.
             </p>
 
           </div>
 
 
-          <div className="grid md:grid-cols-3 gap-12 mt-20">
+          <div className="grid md:grid-cols-3 gap-8 mt-20">
 
 
             {/* STEP 1 */}
 
-            <div className="relative text-center">
+            <div className="relative rounded-[30px] border border-gray-200 p-8 bg-white">
 
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-[#40203f] text-white flex items-center justify-center text-xl font-black shadow-lg">
-                01
+              <div className="flex items-center justify-between">
+
+                <div className="w-14 h-14 rounded-2xl bg-[#40203f] text-white flex items-center justify-center text-lg font-black shadow-lg">
+                  01
+                </div>
+
+                <span className="text-sm font-bold text-gray-300">
+                  START
+                </span>
+
               </div>
 
-              <h3 className="text-2xl font-bold mt-7">
+              <h3 className="text-2xl font-bold mt-8">
                 Create a delivery
               </h3>
 
@@ -473,19 +824,27 @@ export default function Home() {
 
             {/* STEP 2 */}
 
-            <div className="relative text-center">
+            <div className="relative rounded-[30px] border border-gray-200 p-8 bg-white">
 
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-[#40203f] text-white flex items-center justify-center text-xl font-black shadow-lg">
-                02
+              <div className="flex items-center justify-between">
+
+                <div className="w-14 h-14 rounded-2xl bg-[#40203f] text-white flex items-center justify-center text-lg font-black shadow-lg">
+                  02
+                </div>
+
+                <span className="text-sm font-bold text-gray-300">
+                  CHOOSE
+                </span>
+
               </div>
 
-              <h3 className="text-2xl font-bold mt-7">
+              <h3 className="text-2xl font-bold mt-8">
                 Compare couriers
               </h3>
 
               <p className="text-gray-500 leading-7 mt-4">
-                Compare available courier prices and choose the option
-                that suits your delivery.
+                Compare available courier prices and choose the
+                delivery option that works for you.
               </p>
 
             </div>
@@ -493,19 +852,27 @@ export default function Home() {
 
             {/* STEP 3 */}
 
-            <div className="relative text-center">
+            <div className="relative rounded-[30px] border border-gray-200 p-8 bg-white">
 
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-[#40203f] text-white flex items-center justify-center text-xl font-black shadow-lg">
-                03
+              <div className="flex items-center justify-between">
+
+                <div className="w-14 h-14 rounded-2xl bg-[#04B559] text-white flex items-center justify-center text-lg font-black shadow-lg">
+                  03
+                </div>
+
+                <span className="text-sm font-bold text-gray-300">
+                  TRACK
+                </span>
+
               </div>
 
-              <h3 className="text-2xl font-bold mt-7">
-                Track your package
+              <h3 className="text-2xl font-bold mt-8">
+                Follow your package
               </h3>
 
               <p className="text-gray-500 leading-7 mt-4">
-                Follow your delivery in real time until it reaches
-                its destination.
+                Keep up with delivery updates from pickup until your
+                package reaches its destination.
               </p>
 
             </div>
@@ -523,17 +890,22 @@ export default function Home() {
 
       <section
         id="app"
-        className="relative overflow-hidden bg-[#111] text-white px-6 py-28"
+        className="relative overflow-hidden bg-[#111] text-white px-6 py-28 md:py-36"
       >
 
-        <div className="absolute inset-0 bg-gradient-to-br from-[#40203f] via-[#171017] to-black opacity-90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#40203f] via-[#171017] to-black" />
+
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-purple-500/10 blur-3xl" />
+
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-green-500/10 blur-3xl" />
+
 
         <div className="relative max-w-7xl mx-auto">
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
 
-            {/* LEFT */}
+            {/* COPY */}
 
             <div>
 
@@ -541,49 +913,65 @@ export default function Home() {
                 The TunnelMouth app
               </p>
 
-              <h2 className="text-4xl md:text-6xl font-black tracking-tight mt-5 leading-tight">
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-[-0.05em] mt-5 leading-[0.98]">
                 Your delivery,
                 <br />
                 in your hand.
               </h2>
 
-              <p className="text-gray-300 text-lg leading-8 mt-6 max-w-xl">
+              <p className="text-gray-300 text-lg leading-8 mt-7 max-w-xl">
                 Create deliveries, compare courier prices, make secure
-                payments and keep track of every order from one simple
-                app.
+                payments and keep track of your orders from one simple
+                mobile experience.
               </p>
 
 
               <div className="flex flex-wrap gap-4 mt-9">
 
-                <a href="#">
+                <a
+                  href="#"
+                  className="group"
+                >
 
                   <img
                     src="/images/google-play-badge.svg"
                     alt="Get it on Google Play"
-                    className="h-14"
+                    className="h-14 group-hover:scale-[1.03] transition"
                   />
 
                 </a>
 
-                <a href="#">
+
+                <a
+                  href="#"
+                  className="group"
+                >
 
                   <img
                     src="/images/app-store-badge.svg"
                     alt="Download on the App Store"
-                    className="h-14"
+                    className="h-14 group-hover:scale-[1.03] transition"
                   />
 
                 </a>
 
               </div>
 
+
+              <div className="mt-10 flex items-center gap-3 text-sm text-gray-400">
+
+                <span className="w-2 h-2 rounded-full bg-[#04B559]" />
+
+                Available for customers on mobile.
+
+              </div>
+
             </div>
 
 
-            {/* RIGHT PHONES */}
+            {/* PHONES */}
 
-            <div className="relative flex justify-center min-h-[600px]">
+            <div className="relative min-h-[610px]">
 
 
               {/* PHONE 1 */}
@@ -591,22 +979,24 @@ export default function Home() {
               <div
                 className="
                   absolute
-                  w-[185px]
-                  md:w-[220px]
-                  left-[5%]
-                  top-16
+                  w-[175px]
+                  sm:w-[205px]
+                  md:w-[225px]
+                  left-[2%]
+                  md:left-[7%]
+                  top-20
                   rotate-[-9deg]
                   rounded-[36px]
                   overflow-hidden
                   border-[7px]
                   border-black
-                  shadow-2xl
+                  shadow-[0_35px_80px_rgba(0,0,0,0.55)]
                 "
               >
 
                 <img
                   src="/images/payment-phone.png"
-                  alt="TunnelMouth payment"
+                  alt="TunnelMouth payment screen"
                   className="w-full"
                 />
 
@@ -619,22 +1009,24 @@ export default function Home() {
                 className="
                   absolute
                   z-10
-                  w-[215px]
-                  md:w-[255px]
-                  right-[5%]
+                  w-[205px]
+                  sm:w-[235px]
+                  md:w-[270px]
+                  right-[3%]
+                  md:right-[7%]
                   top-0
                   rotate-[7deg]
                   rounded-[40px]
                   overflow-hidden
                   border-[7px]
                   border-black
-                  shadow-[0_35px_80px_rgba(0,0,0,0.6)]
+                  shadow-[0_45px_100px_rgba(0,0,0,0.65)]
                 "
               >
 
                 <img
                   src="/images/home-phone.png"
-                  alt="TunnelMouth home"
+                  alt="TunnelMouth home screen"
                   className="w-full"
                 />
 
@@ -647,22 +1039,24 @@ export default function Home() {
                 className="
                   absolute
                   z-20
-                  w-[185px]
-                  md:w-[220px]
-                  left-[25%]
+                  w-[175px]
+                  sm:w-[205px]
+                  md:w-[225px]
+                  left-[22%]
+                  md:left-[27%]
                   bottom-0
                   rotate-[2deg]
                   rounded-[36px]
                   overflow-hidden
                   border-[7px]
                   border-black
-                  shadow-2xl
+                  shadow-[0_35px_80px_rgba(0,0,0,0.6)]
                 "
               >
 
                 <img
                   src="/images/paystack-phone.png"
-                  alt="TunnelMouth secure payment"
+                  alt="TunnelMouth secure payment screen"
                   className="w-full"
                 />
 
@@ -681,29 +1075,40 @@ export default function Home() {
           COURIER CTA
       ===================================================== */}
 
-      <section className="px-6 py-28 bg-white">
+      <section
+        id="couriers"
+        className="px-6 py-28 md:py-32 bg-white"
+      >
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
 
-          <div className="relative overflow-hidden rounded-[36px] bg-[#40203f] px-8 md:px-16 py-16 text-white">
+          <div className="relative overflow-hidden rounded-[40px] bg-[#40203f] px-8 md:px-16 py-16 md:py-20 text-white shadow-[0_30px_80px_rgba(64,32,63,0.18)]">
 
-            <div className="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-white/10 blur-2xl" />
+            <div className="absolute -right-32 -top-32 w-96 h-96 rounded-full bg-white/10 blur-3xl" />
 
-            <div className="relative">
+            <div className="absolute -left-32 -bottom-40 w-96 h-96 rounded-full bg-[#04B559]/10 blur-3xl" />
 
-              <p className="text-sm uppercase tracking-[0.18em] font-bold text-purple-200">
-                For courier companies
-              </p>
 
-              <h2 className="text-4xl md:text-5xl font-black mt-4 max-w-2xl">
-                Grow your delivery business with TunnelMouth.
-              </h2>
+            <div className="relative grid lg:grid-cols-[1fr_auto] gap-12 items-center">
 
-              <p className="text-purple-100 text-lg leading-8 mt-5 max-w-2xl">
-                Join the TunnelMouth marketplace and connect your
-                courier business with customers looking for reliable
-                delivery services.
-              </p>
+              <div>
+
+                <p className="text-sm uppercase tracking-[0.18em] font-bold text-purple-200">
+                  For courier companies
+                </p>
+
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.04em] mt-4 max-w-3xl leading-tight">
+                  Put your delivery business in front of more customers.
+                </h2>
+
+                <p className="text-purple-100 text-lg leading-8 mt-6 max-w-2xl">
+                  Join the TunnelMouth marketplace and connect your
+                  courier business with customers looking for delivery
+                  services.
+                </p>
+
+              </div>
+
 
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdD2SWL4eRoJumvzrF6atvjSdJmCjDlqiSxFbAUDb4VdHx_dw/viewform?usp=publish-editor"
@@ -712,21 +1117,26 @@ export default function Home() {
                 className="
                   inline-flex
                   items-center
-                  mt-8
+                  justify-center
+                  whitespace-nowrap
                   bg-white
                   text-[#40203f]
                   px-7
                   py-4
                   rounded-2xl
                   font-bold
-                  hover:scale-105
+                  shadow-xl
+                  hover:-translate-y-1
+                  hover:shadow-2xl
                   transition
                 "
               >
                 Become a Courier
-                <span className="ml-3">
+
+                <span className="ml-3 text-xl">
                   →
                 </span>
+
               </a>
 
             </div>
@@ -742,41 +1152,53 @@ export default function Home() {
           FINAL CTA
       ===================================================== */}
 
-      <section className="px-6 py-24 bg-[#faf8fb] text-center">
+      <section className="relative overflow-hidden px-6 py-28 md:py-32 bg-[#faf8fb] text-center">
 
-        <div className="max-w-3xl mx-auto">
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-purple-200/25 blur-3xl" />
+
+
+        <div className="relative max-w-3xl mx-auto">
 
           <p className="text-sm uppercase tracking-[0.18em] font-bold text-[#40203f]">
             Ready when you are
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-black tracking-tight mt-4">
-            Your next delivery starts here.
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-[-0.05em] mt-4 leading-[0.98]">
+            Your next delivery
+            <br />
+            starts here.
           </h2>
 
-          <p className="text-lg text-gray-500 mt-5">
+          <p className="text-lg text-gray-500 leading-8 mt-6 max-w-xl mx-auto">
             Download TunnelMouth and make sending packages simpler.
           </p>
 
 
           <div className="flex justify-center gap-4 flex-wrap mt-9">
 
-            <a href="#">
+            <a
+              href="#"
+              className="group"
+            >
 
               <img
                 src="/images/google-play-badge.svg"
                 alt="Get it on Google Play"
-                className="h-14"
+                className="h-14 group-hover:scale-[1.03] transition"
               />
 
             </a>
 
-            <a href="#">
+
+            <a
+              href="#"
+              className="group"
+            >
 
               <img
                 src="/images/app-store-badge.svg"
                 alt="Download on the App Store"
-                className="h-14"
+                className="h-14 group-hover:scale-[1.03] transition"
               />
 
             </a>
@@ -792,18 +1214,21 @@ export default function Home() {
           FOOTER
       ===================================================== */}
 
-      <footer className="bg-[#111] text-white">
+      <footer className="bg-[#0d0d0d] text-white">
 
         <div className="max-w-7xl mx-auto px-6 py-20">
 
-          <div className="grid md:grid-cols-4 gap-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
 
             {/* BRAND */}
 
-            <div className="md:col-span-1">
+            <div className="lg:col-span-1">
 
-              <div className="flex items-center gap-2">
+              <a
+                href="/"
+                className="flex items-center gap-3"
+              >
 
                 <div className="w-10 h-10 rounded-xl bg-[#40203f] flex items-center justify-center">
 
@@ -817,11 +1242,12 @@ export default function Home() {
                   TunnelMouth
                 </span>
 
-              </div>
+              </a>
 
-              <p className="text-gray-500 leading-7 mt-5">
-                A smarter way to send packages, compare couriers
-                and track deliveries.
+
+              <p className="text-gray-500 leading-7 mt-5 max-w-xs">
+                A simpler way to compare couriers, arrange deliveries
+                and keep track of your packages.
               </p>
 
             </div>
@@ -831,7 +1257,7 @@ export default function Home() {
 
             <div>
 
-              <h3 className="font-bold text-lg mb-5">
+              <h3 className="font-bold text-base mb-5">
                 Company
               </h3>
 
@@ -840,9 +1266,7 @@ export default function Home() {
                 <li>
 
                   <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdD2SWL4eRoJumvzrF6atvjSdJmCjDlqiSxFbAUDb4VdHx_dw/viewform?usp=publish-editor"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="#couriers"
                     className="hover:text-white transition"
                   >
                     Become a Courier
@@ -870,7 +1294,7 @@ export default function Home() {
 
             <div>
 
-              <h3 className="font-bold text-lg mb-5">
+              <h3 className="font-bold text-base mb-5">
                 Legal
               </h3>
 
@@ -907,7 +1331,7 @@ export default function Home() {
 
             <div>
 
-              <h3 className="font-bold text-lg mb-5">
+              <h3 className="font-bold text-base mb-5">
                 Contact
               </h3>
 
@@ -919,7 +1343,7 @@ export default function Home() {
               </a>
 
 
-              <div className="flex gap-5 mt-6">
+              <div className="flex flex-wrap gap-x-5 gap-y-3 mt-6">
 
                 <a
                   href="https://facebook.com/TunnelMouth"
@@ -946,9 +1370,9 @@ export default function Home() {
           </div>
 
 
-          {/* COPYRIGHT */}
+          {/* BOTTOM */}
 
-          <div className="border-t border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between gap-4">
+          <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between gap-4">
 
             <p className="text-gray-600 text-sm">
               © {new Date().getFullYear()} TunnelMouth Technologies Limited
