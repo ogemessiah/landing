@@ -144,7 +144,7 @@ export default function Home() {
               >
 
                 <a
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.tunnelmouth.customer"
                   aria-label="Download TunnelMouth on Google Play"
                 >
 
@@ -833,7 +833,7 @@ export default function Home() {
 
               <div className="flex flex-wrap gap-3 sm:gap-4 mt-9">
 
-                <a href="#">
+                <a href="https://play.google.com/store/apps/details?id=com.tunnelmouth.customer">
 
                   <img
                     src="/images/google-play-badge.svg"
@@ -1068,7 +1068,7 @@ export default function Home() {
 
           <div className="flex justify-center gap-3 sm:gap-4 flex-wrap mt-9">
 
-            <a href="#">
+            <a href="https://play.google.com/store/apps/details?id=com.tunnelmouth.customer">
 
               <img
                 src="/images/google-play-badge.svg"
