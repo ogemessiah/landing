@@ -14,6 +14,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "TunnelMouth",
   description: "Your delivery made easy",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
