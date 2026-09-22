@@ -15,9 +15,19 @@ export const metadata = {
   title: "TunnelMouth",
   description: "Your delivery made easy",
   icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
+    icon: [
+      {
+        url: "/icon.png",
+        type: "image/png",
+      },
+    ],
+    shortcut: ["/icon.png"],
+    apple: [
+      {
+        url: "/icon.png",
+        type: "image/png",
+      },
+    ],
   },
 };
 
