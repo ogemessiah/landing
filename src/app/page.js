@@ -258,31 +258,6 @@ export default function Home() {
 
               </div>
 
-
-              {/* PRICE CARD */}
-
-              <div className="absolute z-20 bottom-[7%] right-0 sm:right-[2%] bg-white rounded-2xl border border-gray-100 shadow-xl px-4 sm:px-5 py-3 sm:py-4">
-
-                <p className="text-[11px] sm:text-xs text-gray-400">
-                  Delivery from
-                </p>
-
-                <p className="text-lg sm:text-xl font-black mt-0.5">
-                  ₦1,500
-                </p>
-
-                <div className="flex items-center gap-1.5 mt-1">
-
-                  <span className="w-2 h-2 rounded-full bg-[#04B559]" />
-
-                  <span className="text-[11px] sm:text-xs text-gray-500">
-                    Available courier
-                  </span>
-
-                </div>
-
-              </div>
-
             </div>
 
           </div>
